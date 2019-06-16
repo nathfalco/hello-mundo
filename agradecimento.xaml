@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Purple"
+             x:Class="StudioC.Views.agradecimento">
+    
+    <NavigationPage.TitleView>
+        <Label Text="Página de Agradecimento" TextColor="White" FontSize="Large"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Center">
+            
+            <Label Text="Obrigado pela Preferência!"
+             
+                 VerticalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="Large"/>
+            
+            <Label Text="Volte Sempre!"  TextColor="Black" FontSize="Medium"></Label>
+
+            <Button Text="Início" Clicked="OnInicio" Margin="9,9,9,9" VerticalOptions="EndAndExpand" BorderWidth="2" BorderColor="Black"  BackgroundColor="Black" TextColor="White"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

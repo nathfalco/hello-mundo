@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Purple"
+             x:Class="StudioC.Views.escolha">
+    
+    <NavigationPage.TitleView>
+        <Label Text="Enviar E-Mail" TextColor="White" FontSize="Large"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            <Label Text="De: " TextColor="Black" FontSize="Large" VerticalOptions="Center"/>
+            <Entry x:Name="deEntry" Placeholder="Digite seu nome ou e-mail" PlaceholderColor="White" FontAttributes="Italic" Margin="9,9,9,9" TextColor="White" />
+
+            <Label Text="Para: " TextColor="Black" FontSize="Large" />
+            <Entry x:Name="paraEntry" Placeholder="Digite o e-mail" PlaceholderColor="White" FontAttributes="Italic" Margin="9,9,9,9" TextColor="White" />
+
+            <Label Text="Mensagem " TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="assuntoEntry" Placeholder="Escreva a mensagem..." PlaceholderColor="White" FontAttributes="Italic" Margin="9,9,9,9" TextColor="White" />
+
+
+            <Button Text="Enviar E-mail" Clicked="OnMail" VerticalOptions="CenterAndExpand" BorderWidth="2" BorderColor="Black"  BackgroundColor="Black" TextColor="White"/>
+            <Button Text="Voltar" Clicked="OnVoltar" Margin="9,9,9,9" BorderWidth="2" BorderColor="Black"  BackgroundColor="Black" TextColor="White" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

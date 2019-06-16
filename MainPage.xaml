@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Purple"
+             x:Class="StudioC.Views.MainPage">
+    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Bem-Vindo" VerticalTextAlignment="Center" TextColor="White" FontSize="Large" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <StackLayout  Padding="20"  VerticalOptions="CenterAndExpand">
+
+        <Label Text="Login" TextColor="Black" FontSize="Large" VerticalOptions="Center"/>
+        <Entry x:Name="nomeEntry" Placeholder="Digite seu login" PlaceholderColor="White" FontAttributes="Italic" Margin="9,9,9,9" TextColor="White" />
+
+        <Label Text="Senha"   TextColor="Black" FontSize="Large" />
+        <Entry x:Name="senhaEntry" IsPassword="True" Keyboard="Numeric" Placeholder="Digite sua senha" PlaceholderColor="White" FontAttributes="Italic" Margin="9,9,9,9" TextColor="White"/>
+
+        <Button Text="LOGAR" Clicked="OnLogar" Margin="9,9,9,9" VerticalOptions="EndAndExpand" BorderWidth="2" BorderColor="Black"  BackgroundColor="Black" TextColor="White" />
+        <Button Text="CADASTRE-SE" Clicked="OnCadastrarN" Margin="9,9,9,9" BorderWidth="2" BorderColor="Black" BackgroundColor="Black" TextColor="White" />
+
+    </StackLayout>
+
+</ContentPage>

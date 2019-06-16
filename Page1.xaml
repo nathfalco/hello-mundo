@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Purple"
+             x:Class="StudioC.Page1">
+    
+    <NavigationPage.TitleView>
+        <Label Text="Lista de Serviços" TextColor="White" FontSize="Large" />
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Center">
+            <ListView x:Name="Lista">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="{Binding Nome}"
+                                 VerticalTextAlignment="Center"
+                                TextColor="White"
+                                FontSize="Large" />
+
+                                    <Label Text="{Binding Preco}"
+                                 VerticalTextAlignment="Center"
+                                FontSize="Medium"
+                                TextColor="Black" />
+
+                                </StackLayout>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Selecionar" Clicked="OnSelecionar" VerticalOptions="EndAndExpand" Margin="9,9,9,9" BorderWidth="2" BorderColor="Black" BackgroundColor="Black" TextColor="White" />
+            <Button Text="Cancelar" Clicked="OnCancelar" Margin="9,9,9,9" BorderWidth="2" BorderColor="Black" BackgroundColor="Black" TextColor="White" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
